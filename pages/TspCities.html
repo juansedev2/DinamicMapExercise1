@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="juansedev2">
+    <title>Tsp Cities</title>
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="stylesheet" href="../css/TspCities.css">
+</head>
+<body>
+    <main class="main_container">
+        <section id="tittles">
+            <h1>TspCities</h1>
+            <h2><a href="../Index.html">Go Back</a></h2>
+        </section>
+        <section id="statement_problem">
+            <p>
+                A travel agency wants to optimize travel times for 10 cities, taking into account the distances between them and the delays that arise daily at their airports. 
+                To do this, the use of algorithms or heuristics is proposed to solve the Traveling Agent Problem (TSP), where they must be established as values in the arcs (the arc value is defined as the effort necessary to get from one point to another represented in a numerical value) the distances traveled in a straight line plus the delay times at each airport.
+            </p>
+            <p>
+                <b>Delivery:</b> Software system that receives as parameters a file containing the list of cities that you want to visit with their respective geographic location information, airport delay times and their name. After processing this information, the system must present on the screen the ordered list of the cities to visit, which is the product of the TSP algorithm or heuristic applied, with its respective location on a dynamic map.
+            </p>
+        </section>
+        <section id="form_section">
+            <h3>Please, here load the file with the next cities information IN A CSV FILE: <a href="../docs/Citites.csv" download="ExampleCities.CSV">You can download this file how to an example</a></h3>
+            <h4>Structure: NameCity, Latitude, Longitude, airport_name, delay (in minutes)</h4>
+            <form action="./TspCities.html" method="get">
+                <label for="cities_file">Upload here the CSV File</label>
+                <input type="file" name="cities_file" id="cities_file" accept=".csv" placeholder="">
+            </form>
+        </section>
+        <section id="table_data">
+            <table id="table">
+
+            </table>
+        </section>
+    </main>
+    <div id="map"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <script src="../js/functions/Functions.js" type="module"></script>
+    <script src="../js/TspCities.js"></script>
+</body>
+</html>

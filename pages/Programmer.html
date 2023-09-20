@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="juansedev2">
+    <title>Where's the programmer?</title>
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="stylesheet" href="../css/Programmer.css">
+</head>
+<body>
+    <main>
+        <h1>Where's the programmer?</h1>
+        <h2><a href="../Index.html">Go Back</a></h2>
+        <section id="statement_problem">
+            <p>
+                A programmer finds himself lost in some unknown place. Fortunately, the programmer carries his laptop with GPS(satellite) support but does not have any application that allows him to establish his location, so he decides to make a program that performs the necessary calculations for this. 
+                The information given by 3 satellites is the following:
+            </p>
+            <ul>
+                <li>Satellite1: You are 977.69 km from the coordinates: 24.711454873635766, 46.67438218019588</li>
+                <li>Satellite 2: You are 2169.86 km from the coordinates: 39.65467179595615, 66.97572083948319</li>
+                <li>Satellite 3: You are 2749.4 km from the coordinates: 40.78689100382049, 14.368456432286543</li>
+            </ul>
+                <b>Delivery:</b> <span>A software system that calculates the programmer's location by triangulation. Answer the following questions: What are the places (Country and city) corresponding to the coordinates given by the satellites? What relevant building is located at the programmer's location? What country is the programmer located in?</span>
+                <p>The data must be presented in a dynamic map</p>
+            <p></p>
+        </section>
+    </main>
+    <div id="map"></div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+    <script src="../js/functions/Functions.js" type="module"></script>
+    <script src="../js/Programmer.js" type="module"></script>   
+</body>
+</html>

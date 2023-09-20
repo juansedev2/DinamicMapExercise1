@@ -1,0 +1,53 @@
+Una agencia de viajes quiere optimizar los tiempos de recorrido para 10 ciudades teniendo en cuenta las distancias entre ellas y las demoras que cotidianamente surgen en los aeropuertos de las mismas. Para ello se propone el uso de algoritmos o heurísticas que solucionen el problema del Agente Viajero (TSP), en donde se deben establecer
+como valores en los arcos (el valor de arco se define como el esfuerzo necesario para llegar de un punto a otro representado en un valor numérico) las distancias recorridas en línea recta más los tiempos de retraso en cada aeropuerto.
+
+• Entrega: Sistema de software que reciba como parámetros un archivo en el que se encuentra la lista de ciudades que se quieren recorrer con sus respectivas informaciones de localización geográfica, tiempos de demora en aeropuerto y su nombre. Después de procesar esta información, el sistema deberá presentar en pantalla la lista ordenada de las ciudades a visitar, la cual es producto de algoritmo o heurística TSP aplicado, con su respectiva ubicación en un mapa dinámico.
+
+
+A travel agency wants to optimize travel times for 10 cities, taking into account the distances between them and the delays that arise daily at their airports. To do this, the use of algorithms or heuristics is proposed to solve the Traveling Agent problem (TSP), where the
+as values in the arcs (the arc value is defined as the effort necessary to get from one point to another represented in a numerical value) the distances traveled in a straight line plus the delay times at each airport.
+
+• Delivery: Software system that receives as parameters a file containing the list of cities that you want to visit with their respective geographic location information, airport delay times and their name. After processing this information, the system must present on the screen the ordered list of the cities to visit, which is the product of the TSP algorithm or heuristic applied, with its respective location on a dynamic map.
+
+Para empezar:
+
+10 ciudades en colombia de manera arbitraria
+
+Según Wikipedia: A 2021 son en total 405 aeropuertos
+
+NameCity, AirportName, Latitude, Longitude, delay
+
+Bogotá, El Dorado, 4.696986269922607, -74.13931178884184, 11111
+
+Medellín, Jose María Córdiva 6.17142472894906, -75.42756035988792, 1111
+
+Barranquilla, Ernesto Cortissoz, 10.9102667,-74.8112572
+
+Cartagena, Rafael Nuñez, 10.4432036,-75.5185371
+
+Cali, Aragon, 3.5423052,-76.3971984
+
+Santa Marta, Simón Bolivar, 10.9452023,-74.7768109
+
+Bucaramanga, Palonegro, 7.1280999,-73.1801288
+
+Cúcuta, Camilo Daza, 7.9268649,-72.508023
+
+Ibagué, Perales, 4.4268278,-75.1438187
+
+Manizales, La Nubia, 5.0289378,-75.4693548
+
+Realizado...
+
+TODO: CARGAR EN EL MAPA ESTOS RESULTADOS, LUEGO DE ELLO APLICAR TSP 1 A 1 Y YA....
+
+
+Recordar que según en física:
+
+Velocidad = distancia/tiempo
+
+tiempo*Velocidad = distancia/tiempo * tiempo
+
+tiempo*Velocidad = distancia
+
+tiempo = distancia/velocidad

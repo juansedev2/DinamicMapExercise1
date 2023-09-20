@@ -1,0 +1,40 @@
+:root{
+    --backgr-color: #141c21;
+    --tittles-color: #D9FFF8;
+    --links-color: #D9FFF8;
+}
+body{
+    background-color: var(--backgr-color);
+}
+header{
+    color: var(--tittles-color);
+    text-align: center;
+    margin: 100px auto;
+}
+header h1, h2{
+    margin: 50px auto;
+    font-variant: small-caps;
+}
+header h2{
+    font-size: 2rem;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+}
+main h3{
+    margin: 0 30px;
+}
+main h3 a{
+    color: var(--links-color);
+    text-decoration: none;
+    font-size: 1.7rem;
+}
+
+main h3 a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
